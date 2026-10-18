@@ -1,0 +1,4 @@
+ACTIVE_PLATFORM       = MaoTestAppPkg\MaoTestAppPkg.dsc # 先試EmulatorPkg，可以編譯後改成OvmfPkg/OvmfPkgX64.dsc
+TARGET                = DEBUG
+TARGET_ARCH           = X64
+TOOL_CHAIN_TAG        = VS2022 # Windows是VS2019，Linux是GCC

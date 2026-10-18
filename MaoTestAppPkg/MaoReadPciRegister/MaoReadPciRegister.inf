@@ -1,0 +1,23 @@
+
+[Defines]
+  INF_VERSION                    = 0x0001001B
+  BASE_NAME                      = MaoReadPciRegister
+  FILE_GUID                      = 1ffcc7e4-8732-4f95-b08f-669d24b10679
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = UefiMain
+
+[Sources]
+  MaoReadPciRegister.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  UefiBootServicesTableLib
+  BaseMemoryLib
+
+[Protocols]
+  gEfiPciRootBridgeIoProtocolGuid
